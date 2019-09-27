@@ -12,7 +12,7 @@ body{
 }
 
 img{
-  height: 322px;
+    height: 322px;
   
 }
 
@@ -73,5 +73,26 @@ h1{
  }
 
  .comments {
-padding-left: 15px;
+    padding-left: 15px;
  }
+
+ p{
+     display:none;
+     overflow: hidden;
+     line-height: 200%;
+     font-size:80%;
+     margin-top:25px;
+ }
+.box{
+    height: 181px;
+}
+
+ .contenedor:hover p{
+     display:block;
+ }
+
+.box:hover .contenedor{
+    height:281px;
+}
+
+
