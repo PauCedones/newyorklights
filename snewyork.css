@@ -12,8 +12,11 @@ body{
 }
 
 img{
+    overflow: hidden;
+    position: relative;
     height: 322px;
-  
+    transition: all 0.5s linear;
+   
 }
 
 .fotos{
@@ -76,23 +79,27 @@ h1{
     padding-left: 15px;
  }
 
- p{
-     display:none;
-     overflow: hidden;
-     line-height: 200%;
-     font-size:80%;
-     margin-top:25px;
+ .filtro{
+    font-size: 14px;
+    color: gray;
+    line-height : 20px;   
+    z-index: 0;
+    height: 0vh;
+    overflow: hidden;
+    transition: all 300ms linear;
  }
 .box{
     height: 181px;
 }
 
- .contenedor:hover p{
-     display:block;
- }
-
-.box:hover .contenedor{
-    height:281px;
+.contenedor:hover img{
+    height: 222px;
 }
 
+.contenedor:hover .box{
+    height: 281px;
+}
 
+.contenedor:hover .filtro{
+    height: 100vh;
+}
